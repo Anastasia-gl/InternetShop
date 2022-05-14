@@ -1,12 +1,13 @@
-﻿namespace InternetShop
+﻿namespace InternetShop.Service
 {
-    public class AddToBasket
+    internal class BasketService
     {
-        Basket basket = new Basket();
+        Models.Basket basket = new Models.Basket();
         Random random = new Random();
 
         public string[] AddToBasketService(string[] clothes)
         {
+
             for (int i = 0; i < basket.Clothes.Length; i++)
             {
                 int index = random.Next(clothes.Length);
